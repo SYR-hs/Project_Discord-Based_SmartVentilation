@@ -53,7 +53,7 @@ def get_weather_realtime(stn="119"):          # stn="119"는 현재 위치(수�
                     tm_str = cols[0]                            # 첫 번째 컬럼: 관측 시각 (예: 202606182100)
                     pm10_raw = cols[2]                          # 세 번째 컬럼: PM10 원시 데이터 (예: '14,000000,,=')
                     
-                    # 🛠️ 데이터 정제(Cleansing): 불순물 기호(',', '=')를 제거하여 순수 숫자만 추출
+                    # 🛠️ 데이터 정제(Cleansing): 기호(',', '=')를 제거하여 순수 숫자만 추출
                     clean_pm10 = pm10_raw.split(',')[0].replace('=', '').strip()
                     
                     try:
