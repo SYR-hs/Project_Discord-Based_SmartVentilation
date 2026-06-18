@@ -177,7 +177,7 @@ async def realtime_gas_monitor():
 # 5. 수동 제어 명령어 및 30분 정기 보고서 루프
 # ==========================================
 @bot.command(name="실내상태")                 
-async def measure_indoor(ctx):                # 사용자가 수동으로 현재 상태 스냅샷을 요구할 때 실행 (!실내상태)
+async def measure_indoor(ctx):                # 사용자가 수동으로 현재 상태를 요구할 때 실행 (!실내상태)
     await ctx.send("🔍 센서 데이터를 분석하여 최적의 환기 솔루션을 계산 중입니다...")
     is_gas_detected = (gas.value == 0)        # 물리 센서의 현재 핀 상태 평가
     res = get_weather_realtime(stn="119")     # 기상청 데이터 호출
@@ -230,7 +230,7 @@ async def auto_ventilation_check():
     # 보고서 뼈대 생성
     embed_data = {"title": "🔄 [30분 정기 실내 환경 보고서]", "color": 65280}
 
-    # 현재 실내외 데이터를 조합하여 보고서 내용(Description) 채우기
+    # 현재 실내외 데이터를 조합하여 보고 내용 채우기
     if is_gas_detected:
         bz.on()
         if outside_pm10 > 80:  
