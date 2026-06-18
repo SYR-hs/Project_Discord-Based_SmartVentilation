@@ -9,9 +9,9 @@ from gpiozero import Buzzer, DigitalInputDevice # 라즈베리파이의 GPIO 핀
 # ==========================================
 # 1. 환경 설정 및 API 인증키 (상수 정의)
 # ==========================================
-DISCORD_BOT_TOKEN = "MTUwOTAwNDYyMDk2ODQ5NzI1Mg.GRssRL.0Va18v3IONWbDyaul6FWFKziUW2a0nMQ355qkQ" # 디스코드 봇 고유 토큰 (봇 로그인용)
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1509003306662498386/Cf6sg70Bvuk8G5b7KyFcDTZtmr3-hIVy_63xO0bFb9oQtHGKX1YqCYh6c3s_i07FeEGC" # 정기 보고서를 특정 채널에 쏘기 위한 웹훅 주소
-WEATHER_API_KEY = "Pyo9OMubRhWqPTjLm3YV1A" # 기상청 API 허브 데이터 접근 권한 키
+DISCORD_BOT_TOKEN = " " # 디스코드 봇 고유 토큰 (봇 로그인용, 개인정보라 빈칸 상태)
+DISCORD_WEBHOOK_URL = " " # 정기 보고서를 특정 채널에 쏘기 위한 웹훅 주소 (개인정보라 빈칸 상태)
+WEATHER_API_KEY = " " # 기상청 API 허브 데이터 접근 권한 키 (개인정보라 빈칸 상태)
 
 # ==========================================
 # 2. 기상청 외부 미세먼지(PM10) 데이터 수집 엔진
