@@ -17,7 +17,7 @@ WEATHER_API_KEY = " " # 기상청 API 허브 데이터 접근 권한 키 (개인
 # 2. 기상청 외부 미세먼지(PM10) 데이터 수집 엔진
 # ==========================================
 def get_weather_realtime(stn="119"):          # stn="119"는 현재 위치(수원/오산 권역)의 기상청 지점 번호 (기본값)
-    url = "https://apihub.kma.go.kr/api/typ01/url/kma_pm10.php" # PM10(미세먼지) 전용 기상청 API 엔드포인트
+    url = " " # PM10(미세먼지) 전용 기상청 API 엔드포인트 (개인정보라 빈칸 상태)
     
     KST = zoneinfo.ZoneInfo("Asia/Seoul")     # 한국 표준시 객체 생성
     now = datetime.now(KST)                   # 현재 KST 시각을 가져옴
